@@ -1,2 +1,2 @@
-# Arquitetura Limpa Simplificada com NestJS e Typescript
-Arquitetura Limpa Simplificada com NestJS e Typescript
+# Arquitetura Limpa com NestJS e Typescript
+Arquitetura Limpa com NestJS e Typescript
