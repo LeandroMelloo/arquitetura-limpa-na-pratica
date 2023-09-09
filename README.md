@@ -1,2 +1,2 @@
-# arquitetura-limpa-springboot
+# Arquitetura Limpa Simplificada com Spring Boot
 Arquitetura Limpa Simplificada com Spring Boot
