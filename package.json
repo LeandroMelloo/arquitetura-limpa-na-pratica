@@ -1,0 +1,15 @@
+{
+  "name": "arquitetura-limpa-na-pratica",
+  "version": "1.0.0",
+  "description": "Arquitetura limpa na prática",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Typescript",
+    "Javascript"
+  ],
+  "author": "Leandro Mello",
+  "license": "ISC"
+}

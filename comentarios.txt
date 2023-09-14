@@ -1,0 +1,19 @@
+Entities: responsável por concentraros principais participantes das regras de negócio
+    - Objetos de negócio
+    - Aplicam regras que geralmente fazem parte apenas da entidade
+    - Sem vínculo com frameworks (ORM)
+
+Use Cases: responsável por realizar a orquestração das Entities na concepção das regras de negócio
+    - Representa as regras de negócio
+    - Sem vínculo com frameworks, exceto por algumas bibliotecas utilitárias
+    - O caso de uso não sabe quem o está utilizando, se está consumindo os dados no formato JSON ou XML
+    - Laçam exceções de negócio
+
+Interface Adapters: responsável por fazer a tradução entre o mundo externo e as regras de negócio
+    - Fazem o intercâmbio de dados entre a base de dados, interface gráfica e outros serviços utilizados pela aplicação
+    - Definem interfaces de maneira que uma ou mais implementações podem existir
+    - Os casos de uso não sabem de onde os dados estão vindo
+    - Convertem os dados para o mecanismo de I/O
+
+Frameworks and Drivers: são aspectos puramente tecnológicos, não funcionais
+    - São frameworks e outras estruturas externas que fazem I/O com a aplicação
