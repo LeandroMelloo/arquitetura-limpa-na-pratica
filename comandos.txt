@@ -1,0 +1,6 @@
+Comando para criar o arquivo package.json
+    - npm init
+
+Comando para criar o arquivo ts.config
+    - npm install typescript -g
+    - tsc --init
