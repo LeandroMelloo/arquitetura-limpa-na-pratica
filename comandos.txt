@@ -4,3 +4,15 @@ Comando para criar o arquivo package.json
 Comando para criar o arquivo ts.config
     - npm install typescript -g
     - tsc --init
+
+Comando para gerar a pasta com o arquivo compilado para JavaScript
+    - tsc
+
+Comando para rodar o arquivo main dentro da pasta dist
+    - npm run main
+
+Comando para instalar a biblioteca Jest para executar os testes
+    - npm install jest @types/jest --save
+
+Comando para instalar a biblioteca para interagir com o postgresql
+    - npm install pg-promise

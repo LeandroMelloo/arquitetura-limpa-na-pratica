@@ -17,3 +17,12 @@ Interface Adapters: responsável por fazer a tradução entre o mundo externo e 
 
 Frameworks and Drivers: são aspectos puramente tecnológicos, não funcionais
     - São frameworks e outras estruturas externas que fazem I/O com a aplicação
+
+
+Principios do SOLID
+
+Considerando uma linguagem orientada a objetos, a forma mais normal de desacoplar 
+é utilizando a "inversão de dependência".
+
+Não devo ter acoplamento com o mundo externo.
+Devemos ter abstrações para desacoplar o núcleo.

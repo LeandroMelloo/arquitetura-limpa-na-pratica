@@ -1,0 +1,18 @@
+Idealização:
+    Entity
+
+    ParkingLot - Estacionamento
+        - code
+        - capacity
+        - openHour
+        - closeHour
+    
+    ParkedCar - Carro Estacionado
+        - code
+        - plate - placa
+        - date - data
+
+    Use Case
+
+    EnterParkingLot - Entrada Estacionamento
+    LeaveParkingLot - Saída Estacionamento
