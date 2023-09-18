@@ -19,3 +19,6 @@ Comando para instalar a biblioteca para interagir com o postgresql
 
 Comando para instalar a biblioteca para criar um servidor http
     - npm install express --save
+
+Comando para instalar a biblioteca hapi
+    - npm install @hapi/hapi --save
