@@ -1,11 +1,21 @@
 import EnterParkingLot from "../src/core/usecase/EnterParkingLot";
 import GetParkingLot from "../src/core/usecase/GetParkingLot";
 import ParkingLotRepositoryMemory from "../src/infra/repository/ParkingLotRepositoryMemory";
+import ParkingLotRepositorySQL from "../src/infra/repository/ParkingLotRepositorySQL";
 
 test("Should enter parking lot", async () => {
-    const parkingLotRepositoryMemory = new ParkingLotRepositoryMemory();
-    const enterParkingLot = new EnterParkingLot(parkingLotRepositoryMemory);
-    const getParkingLot = new GetParkingLot(parkingLotRepositoryMemory);
+    // const parkingLotRepositoryMemory = new ParkingLotRepositoryMemory();
+    const parkingLotRepositorySQL = new ParkingLotRepositorySQL();
+    const getParkingLot = new GetParkingLot(parkingLotRepositorySQL);
+    const parkingLot = await getParkingLot.execute("Shopping");
+    expect(parkingLot.code).toBe("Shopping");
+});
+
+test("Should enter parking lot", async () => {
+    // const parkingLotRepositoryMemory = new ParkingLotRepositoryMemory();
+    const parkingLotRepositorySQL = new ParkingLotRepositorySQL();
+    const enterParkingLot = new EnterParkingLot(parkingLotRepositorySQL);
+    const getParkingLot = new GetParkingLot(parkingLotRepositorySQL);
 
     const parkingLotBeforeEnter = await getParkingLot.execute("Shopping");
     expect(parkingLotBeforeEnter.occupiedSpaces).toBe(0);
@@ -18,6 +28,7 @@ test("Should enter parking lot", async () => {
 
 test("Should be closed", async () => {
     const parkingLotRepositoryMemory = new ParkingLotRepositoryMemory();
+    const parkingLotRepositorySQL = new ParkingLotRepositorySQL();
     const enterParkingLot = new EnterParkingLot(parkingLotRepositoryMemory);
     const getParkingLot = new GetParkingLot(parkingLotRepositoryMemory);
 

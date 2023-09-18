@@ -21,8 +21,8 @@ Frameworks and Drivers: são aspectos puramente tecnológicos, não funcionais
 
 Principios do SOLID
 
-Considerando uma linguagem orientada a objetos, a forma mais normal de desacoplar 
-é utilizando a "inversão de dependência".
+Considerando uma linguagem orientada a objetos, a forma mais normal de desacoplar é utilizando a "inversão de dependência".
 
-Não devo ter acoplamento com o mundo externo.
-Devemos ter abstrações para desacoplar o núcleo.
+Não devo ter acoplamento com o mundo externo. Devemos ter abstrações para desacoplar o núcleo.
+
+Controller é a porta de entrada para o dominio.

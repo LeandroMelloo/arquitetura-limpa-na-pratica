@@ -15,4 +15,7 @@ Comando para instalar a biblioteca Jest para executar os testes
     - npm install jest @types/jest --save
 
 Comando para instalar a biblioteca para interagir com o postgresql
-    - npm install pg-promise
+    - npm install pg-promise --save
+
+Comando para instalar a biblioteca para criar um servidor http
+    - npm install express --save
